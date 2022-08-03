@@ -134,6 +134,7 @@ async function renderResult() {
       hands = await detector.estimateHands(
           camera.video,
           {flipHorizontal: false});
+      // console.log(hands);
     } catch (error) {
       detector.dispose();
       detector = null;
